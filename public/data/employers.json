@@ -1,0 +1,86 @@
+[
+  {
+    "id": "employer-001",
+    "companyName": "Northstar Labs",
+    "slug": "northstar-labs",
+    "industry": "Software Development",
+    "companySize": "51-200",
+    "foundedYear": 2018,
+    "website": "https://northstar.example.com",
+    "logoUrl": "/assets/company-logos/northstar-labs.svg",
+    "description": "Northstar Labs builds collaboration tools that help distributed teams do their best work.",
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "United States",
+      "remotePolicy": "remote-first"
+    },
+    "contact": {
+      "name": "Elena Rodriguez",
+      "title": "Talent Partner",
+      "email": "elena.rodriguez@northstar.example.com"
+    },
+    "openPositions": [
+      {
+        "id": "job-001",
+        "title": "Senior Frontend Engineer",
+        "department": "Engineering",
+        "employmentType": "full-time",
+        "workplace": "remote",
+        "salaryRange": { "min": 120000, "max": 150000, "currency": "USD" },
+        "requiredSkills": ["React", "TypeScript", "CSS", "Testing"],
+        "postedAt": "2026-08-28T10:00:00Z"
+      },
+      {
+        "id": "job-002",
+        "title": "Product Designer",
+        "department": "Design",
+        "employmentType": "full-time",
+        "workplace": "remote",
+        "salaryRange": { "min": 105000, "max": 135000, "currency": "USD" },
+        "requiredSkills": ["Figma", "User Research", "Design Systems"],
+        "postedAt": "2026-09-02T13:30:00Z"
+      }
+    ],
+    "benefits": ["Health insurance", "Flexible PTO", "Learning budget", "Home office stipend"],
+    "verificationStatus": "verified",
+    "createdAt": "2025-11-05T16:45:00Z"
+  },
+  {
+    "id": "employer-002",
+    "companyName": "Greenfield Health",
+    "slug": "greenfield-health",
+    "industry": "Digital Health",
+    "companySize": "201-500",
+    "foundedYear": 2015,
+    "website": "https://greenfield.example.com",
+    "logoUrl": "/assets/company-logos/greenfield-health.svg",
+    "description": "Greenfield Health makes preventative care easier to access through thoughtful digital products.",
+    "location": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "United States",
+      "remotePolicy": "hybrid"
+    },
+    "contact": {
+      "name": "David Chen",
+      "title": "Head of People",
+      "email": "david.chen@greenfield.example.com"
+    },
+    "openPositions": [
+      {
+        "id": "job-003",
+        "title": "Backend Engineer",
+        "department": "Engineering",
+        "employmentType": "full-time",
+        "workplace": "hybrid",
+        "salaryRange": { "min": 125000, "max": 160000, "currency": "USD" },
+        "requiredSkills": ["Node.js", "TypeScript", "PostgreSQL", "REST APIs"],
+        "postedAt": "2026-08-25T08:45:00Z"
+      }
+    ],
+    "benefits": ["Health insurance", "401(k) match", "Parental leave", "Commuter benefits"],
+    "verificationStatus": "verified",
+    "createdAt": "2026-01-18T11:20:00Z"
+  }
+]

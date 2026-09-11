@@ -1,0 +1,103 @@
+[
+  {
+    "id": "candidate-001",
+    "firstName": "Aisha",
+    "lastName": "Khan",
+    "email": "aisha.khan@example.com",
+    "phone": "+1-555-014-1024",
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "United States",
+      "remotePreference": "remote"
+    },
+    "headline": "Frontend Developer specializing in accessible React applications",
+    "summary": "Frontend developer with four years of experience building responsive products with React, TypeScript, and modern CSS.",
+    "skills": [
+      { "name": "React", "level": "advanced", "years": 4 },
+      { "name": "TypeScript", "level": "advanced", "years": 3 },
+      { "name": "JavaScript", "level": "advanced", "years": 5 },
+      { "name": "CSS", "level": "advanced", "years": 5 },
+      { "name": "Testing", "level": "intermediate", "years": 2 }
+    ],
+    "experience": [
+      {
+        "title": "Frontend Developer",
+        "company": "Northstar Labs",
+        "startDate": "2022-03-01",
+        "endDate": null,
+        "description": "Built and maintained customer-facing React features used by 50,000 monthly users."
+      },
+      {
+        "title": "Web Developer",
+        "company": "Brightline Studio",
+        "startDate": "2020-06-01",
+        "endDate": "2022-02-28",
+        "description": "Delivered responsive marketing websites and reusable UI components for small businesses."
+      }
+    ],
+    "education": [
+      {
+        "degree": "BSc Computer Science",
+        "institution": "University of Texas at Austin",
+        "graduationYear": 2020
+      }
+    ],
+    "employmentPreferences": {
+      "desiredTitles": ["Frontend Developer", "UI Engineer"],
+      "employmentTypes": ["full-time", "contract"],
+      "minimumSalary": 95000,
+      "availability": "available-now"
+    },
+    "portfolioUrl": "https://portfolio.example.com/aisha-khan",
+    "profileStatus": "actively-looking",
+    "createdAt": "2026-08-12T14:30:00Z"
+  },
+  {
+    "id": "candidate-002",
+    "firstName": "Marcus",
+    "lastName": "Lee",
+    "email": "marcus.lee@example.com",
+    "phone": "+1-555-017-8891",
+    "location": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "United States",
+      "remotePreference": "hybrid"
+    },
+    "headline": "Product designer turning complex workflows into clear experiences",
+    "summary": "Product designer with a background in research, interaction design, and design systems for B2B software.",
+    "skills": [
+      { "name": "Figma", "level": "advanced", "years": 6 },
+      { "name": "User Research", "level": "advanced", "years": 5 },
+      { "name": "Prototyping", "level": "advanced", "years": 6 },
+      { "name": "Design Systems", "level": "intermediate", "years": 3 },
+      { "name": "Accessibility", "level": "intermediate", "years": 3 }
+    ],
+    "experience": [
+      {
+        "title": "Senior Product Designer",
+        "company": "CivicFlow",
+        "startDate": "2021-01-11",
+        "endDate": null,
+        "description": "Led discovery and product design for a workflow platform used by public-sector teams."
+      }
+    ],
+    "education": [
+      {
+        "degree": "BFA Interaction Design",
+        "institution": "School of the Art Institute of Chicago",
+        "graduationYear": 2019
+      }
+    ],
+    "employmentPreferences": {
+      "desiredTitles": ["Product Designer", "UX Designer"],
+      "employmentTypes": ["full-time"],
+      "minimumSalary": 110000,
+      "availability": "two-weeks"
+    },
+    "portfolioUrl": "https://portfolio.example.com/marcus-lee",
+    "profileStatus": "open-to-opportunities",
+    "createdAt": "2026-08-20T09:15:00Z"
+  }
+]
