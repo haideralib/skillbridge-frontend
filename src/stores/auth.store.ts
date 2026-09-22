@@ -21,6 +21,7 @@ export interface AuthState {
     isEmployer: boolean;
     isAdmin: boolean;
     hasRole: (roles: UserRole | UserRole[]) => boolean;
+    setEmailVerified: () => void;
     setProfile: (profile: IProfileResponse) => void;
     login: (payload: LoginPayload) => Promise<void>;
     loadProfile: () => Promise<void>;
@@ -43,6 +44,11 @@ export const useAuthStore = create<AuthState>()(
                 const role = get().role;
                 return role !== null && (Array.isArray(roles) ? roles : [roles]).includes(role);
             },
+
+            setEmailVerified: () => set((state) => state.user ? {
+                user: { ...state.user, isEmailVerified: true },
+                profile: state.profile ? { ...state.profile, isEmailVerified: true } : state.profile
+            } : {}),
             
             setProfile: (profile) => set({ profile }),
 

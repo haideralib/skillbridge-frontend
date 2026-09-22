@@ -18,17 +18,20 @@ export type IProfileResponse =
         name: string;
         email: string;
         role: "candidate";
+        isEmailVerified: boolean;
         profile: ICandidateProfile;
     }
     | {
         name: string;
         email: string;
         role: "employer";
+        isEmailVerified: boolean;
         profile: IEmployerProfile;
     }
     | {
         name: string;
         email: string;
         role: "admin";
+        isEmailVerified: boolean;
         profile: null;
     };

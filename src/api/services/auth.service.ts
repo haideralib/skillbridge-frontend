@@ -22,3 +22,13 @@ export const getProfile = async (): Promise<IBaseResponse<IProfileResponse>> => 
 export const logoutUser = async (): Promise<void> => {
     await api.post("/auth/logout");
 };
+
+export const sendEmailVerification = async (): Promise<IBaseResponse<null>> => {
+    const response = await api.post<IBaseResponse<null>>("/auth/email-verification/send");
+    return response.data;
+};
+
+export const verifyEmail = async (token: string): Promise<IBaseResponse<null>> => {
+    const response = await api.get<IBaseResponse<null>>(`/auth/email-verification/${token}`);
+    return response.data;
+};

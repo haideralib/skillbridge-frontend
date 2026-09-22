@@ -13,6 +13,7 @@ export interface JobResult {
     experienceLevel: string;
     vacancies: number;
     createdAt: string;
+    applicationsCount?: number;
 }
 
 export interface JobSearchResult {
@@ -57,5 +58,10 @@ export const searchJobs = async (params: { title?: string; location?: string; jo
 
 export const getJobById = async (id: string) => {
     const response = await api.get<{ data: JobResult }>(`/jobs/${id}`);
+    return response.data.data;
+};
+
+export const getEmployerJobs = async () => {
+    const response = await api.get<{ data: JobResult[] }>("/jobs/mine");
     return response.data.data;
 };

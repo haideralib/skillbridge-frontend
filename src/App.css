@@ -4,6 +4,9 @@
 
 #root { min-height: 100vh; }
 .site-nav { align-items: center; display: flex; height: 82px; justify-content: space-between; margin: 0 auto; max-width: 1240px; padding: 0 38px; }
+.email-verification-banner { align-items: center; background: #fff8e1; border-bottom: 1px solid #ead58a; color: #6a5312; display: flex; font-size: 12px; gap: 18px; justify-content: center; padding: 10px 24px; text-align: center; }
+.email-verification-banner a { color: #8a6500; font-weight: 700; text-decoration: underline; }
+.email-verification-banner a span { display: inline-block; margin-left: 5px; text-decoration: none; }
 .brand { font-family: 'Manrope', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -.06em; }
 .brand span { font-weight: 500; }
 .brand i { color: #a9cf3e; font-style: normal; }
@@ -73,6 +76,34 @@ h1 em { color: #72746d; font-style: normal; font-weight: 500; }
 .job-view-sidebar span { color: #777; font-size: 10px; font-weight: 700; text-transform: uppercase; }
 .job-view-sidebar strong { font-size: 14px; font-weight: 600; }
 .job-view-sidebar .register-submit { width: 100%; }
+.application-modal-backdrop { align-items: center; background: rgba(25,26,23,.48); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 20; }
+.application-modal { background: #fff; border: 1px solid #d4d2d0; box-shadow: 0 24px 70px rgba(25,26,23,.2); max-width: 620px; padding: 32px; width: 100%; }
+.application-modal-header { align-items: start; display: flex; gap: 24px; justify-content: space-between; margin-bottom: 24px; }
+.application-modal-header h2 { font-size: 29px; letter-spacing: -.055em; line-height: 1.05; }
+.application-modal-header p:last-child { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0 0; }
+.application-modal-close { background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: 28px; line-height: 1; padding: 0 2px; }
+.application-cover-letter { color: var(--ink); display: grid; font-size: 12px; font-weight: 700; gap: 8px; }
+.application-cover-letter span { color: #85867f; font-size: 11px; font-weight: 400; }
+.application-cover-letter textarea { border: 1px solid var(--line); color: var(--ink); font: inherit; font-size: 13px; font-weight: 400; line-height: 1.6; outline: 0; padding: 13px; resize: vertical; width: 100%; }
+.application-cover-letter textarea:focus { border-color: var(--blue); }
+.application-modal-actions { align-items: center; display: flex; gap: 12px; justify-content: flex-end; margin-top: 22px; }
+.application-row { cursor: pointer; transition: border-color .2s ease, background .2s ease; }
+.application-row:hover, .application-row:focus-visible { background: #fafaf8; border-color: var(--blue); outline: 0; }
+.application-details-page { margin: 0 auto; max-width: 1080px; padding: 48px 38px 80px; width: 100%; }
+.application-details-header { align-items: start; background: #fff; border: 1px solid var(--line); display: flex; justify-content: space-between; padding: 32px; }
+.application-details-header h1 { font-size: clamp(36px, 5vw, 60px); letter-spacing: -.07em; }
+.application-details-header p:last-child { color: var(--muted); font-size: 13px; margin: 12px 0 0; }
+.application-details-grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; margin-top: 20px; }
+.application-detail-panel { background: #fff; border: 1px solid var(--line); padding: 28px; }
+.application-detail-panel h2 { font-size: 22px; margin-bottom: 22px; }
+.application-detail-panel h3 { font-size: 14px; margin-top: 26px; }
+.application-detail-panel p { color: var(--muted); font-size: 14px; line-height: 1.75; white-space: pre-wrap; }
+.application-detail-list { display: grid; gap: 14px; }
+.application-detail-list div { display: grid; gap: 5px; }
+.application-detail-list span { color: #85867f; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+.application-detail-list strong { font-size: 13px; font-weight: 600; }
+.cover-letter-copy { border-left: 3px solid #accd48; padding-left: 16px; }
+@media (max-width: 600px) { .application-modal { padding: 24px; } .application-modal-header h2 { font-size: 24px; } }
 @media (max-width: 700px) {
 	.job-view-page { padding: 30px 20px 60px; }
 	.job-view-header { align-items: flex-start; flex-direction: column; padding: 24px; }
@@ -278,6 +309,30 @@ h1 em { color: #595959; font-weight: 400; }
 .profile-empty-panel h2 { font-size: 20px; }
 .profile-empty-panel p { color: #777; font-size: 13px; margin: 10px 0 22px; }
 .profile-empty-panel small { color: #999; font-size: 10px; margin-top: 12px; }
+.resume-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.resume-analysis-button { background: #eef3ff; border: 1px solid #c9d8ff; border-radius: 5px; color: var(--blue); cursor: pointer; font-size: 14px; font-weight: 700; min-height: 47px; padding: 0 16px; }
+.resume-analysis-button:disabled { cursor: wait; opacity: .65; }
+.resume-analysis-button span { font-size: 16px; margin-left: 12px; }
+.resume-analysis-backdrop { align-items: center; background: rgba(25,26,23,.48); display: flex; inset: 0; justify-content: center; padding: 20px; position: fixed; z-index: 30; }
+.resume-analysis-modal { background: #fff; border: 1px solid #d4d2d0; box-shadow: 0 24px 70px rgba(25,26,23,.2); max-height: calc(100vh - 40px); max-width: 720px; overflow: auto; padding: 32px; width: 100%; }
+.resume-analysis-header { align-items: start; display: flex; gap: 24px; justify-content: space-between; }
+.resume-analysis-header-actions { align-items: center; display: flex; gap: 14px; }
+.resume-analysis-header h2 { font-size: 29px; letter-spacing: -.04em; line-height: 1.05; }
+.resume-analysis-header > div > p:last-child { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0 0; }
+.resume-analysis-close { background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: 28px; line-height: 1; padding: 0 2px; }
+.resume-analysis-download { background: var(--blue); border: 0; border-radius: 4px; color: #fff; cursor: pointer; font-size: 11px; font-weight: 700; padding: 10px 12px; white-space: nowrap; }
+.resume-analysis-download span { font-size: 15px; margin-left: 7px; }
+.resume-analysis-summary, .resume-analysis-recommendations { background: #f8faff; border: 1px solid #d7e2ff; margin-top: 24px; padding: 18px; }
+.resume-analysis-summary span { color: var(--blue); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.resume-analysis-summary p, .resume-analysis-grid p, .resume-analysis-recommendations li { color: #595959; font-size: 13px; line-height: 1.6; }
+.resume-analysis-summary p { margin: 8px 0 0; }
+.resume-analysis-grid { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; margin-top: 16px; }
+.resume-analysis-grid > div { border: 1px solid #d4d2d0; padding: 18px; }
+.resume-analysis-grid h3, .resume-analysis-recommendations h3 { font-size: 15px; margin-bottom: 12px; }
+.resume-analysis-grid ul, .resume-analysis-recommendations ul { display: grid; gap: 8px; margin: 0; padding-left: 18px; }
+.resume-analysis-grid li { color: #595959; font-size: 13px; line-height: 1.5; }
+.resume-analysis-grid p, .resume-analysis-recommendations p { margin: 0; }
+@media (max-width: 600px) { .resume-analysis-modal { padding: 24px; } .resume-analysis-grid { grid-template-columns: 1fr; } .resume-analysis-header h2 { font-size: 24px; } .resume-analysis-header-actions { align-items: flex-end; flex-direction: column-reverse; gap: 8px; } .resume-analysis-download { font-size: 10px; padding: 8px 9px; } .resume-actions { align-items: stretch; flex-direction: column; width: 100%; } .resume-actions .register-submit, .resume-analysis-button { text-align: center; width: 100%; } }
 .settings-panel { border: 1px solid #d4d2d0; border-radius: 8px; margin-top: 25px; overflow: hidden; }
 .settings-row { align-items: center; border-bottom: 1px solid #e3e1df; display: flex; gap: 20px; justify-content: space-between; padding: 21px; }
 .settings-row:last-child { border-bottom: 0; }
@@ -286,6 +341,13 @@ h1 em { color: #595959; font-weight: 400; }
 .settings-row span { color: #777; font-size: 11px; }
 .settings-row input[type="checkbox"] { accent-color: var(--blue); height: 16px; width: 16px; }
 .settings-row select { border: 1px solid #bcbab8; border-radius: 5px; padding: 8px 20px 8px 10px; }
+.settings-action { background: var(--blue); border: 0; border-radius: 5px; color: #fff; cursor: pointer; font-size: 11px; font-weight: 700; padding: 9px 12px; white-space: nowrap; }
+.settings-action:disabled { background: #aeb8cc; cursor: not-allowed; }
+.verified-badge { background: #e8f5ec; border: 1px solid #b9dfc2; border-radius: 999px; color: #238044; font-size: 11px; font-weight: 700; padding: 7px 11px; }
+.email-verification-page { display: grid; min-height: calc(100vh - 150px); padding: 64px 20px; place-items: center; }
+.email-verification-panel { background: #fff; border: 1px solid var(--line); border-radius: 8px; max-width: 520px; padding: 38px; width: 100%; }
+.email-verification-panel h1 { font-size: clamp(32px, 5vw, 52px); margin-top: 12px; }
+.email-verification-panel > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 16px 0 24px; }
 .profile-header { align-items: end; display: flex; gap: 40px; justify-content: space-between; margin-bottom: 30px; }
 .profile-header h1 { font-size: clamp(32px, 4vw, 48px); letter-spacing: -.045em; line-height: 1.05; }
 .profile-header > div:first-child > p:last-child { color: #595959; font-size: 14px; line-height: 1.5; margin: 13px 0 0; }
